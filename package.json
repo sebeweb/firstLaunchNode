@@ -1,0 +1,25 @@
+{
+  "name": "firstlaunchnode",
+  "version": "0.0.1",
+  "description": "init npm",
+  "main": "serveur.js",
+  "scripts": {
+    "test": "nodejs serveur.js"
+  },
+  "dependencies":{
+        "express":"4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sebeweb@github.com/sebeweb/firstLaunchNode.git"
+  },
+  "keywords": [
+    "sebeweb"
+  ],
+  "author": "Sebastien Javary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebeweb/firstLaunchNode/issues"
+  },
+  "homepage": "https://github.com/sebeweb/firstLaunchNode#readme"
+}

@@ -1,15 +1,26 @@
-const http = require('http');
-const hostname = '127.0.0.1';
-const port = '536';
+var express = require('express');
+var appli = express();
 
-const server = http.createServer(
-        function(request, responce) {
-            responce.statusCode = 200;
-            responce.setHeader('Content-Type','text/plain');
-            responce.end('Bonjour');
+
+
+appli.get(
+        '/',
+        function (request, response) {
+            response.send('salut');
         }
 );
 
-server.listen(port, hostname, function () {
-    console.log('le server ecoute http://'+hostname+":"+port);
+appli.get(
+        '/user',
+        function (request, response) {
+            var retour = {
+                "nom": "oui",
+                "prenom": "oui"
+            };
+            response.json(retour);
+        }
+);
+
+appli.listen('536', function () {
+    console.log("j écoute");
 });
