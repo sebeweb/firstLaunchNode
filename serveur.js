@@ -6,7 +6,7 @@ var appli = express();
 appli.get(
         '/',
         function (request, response) {
-            response.send('salut');
+            response.sendFile(__dirname+'/views/index.html');
         }
 );
 
